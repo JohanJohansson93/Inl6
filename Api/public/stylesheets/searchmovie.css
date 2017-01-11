@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+.navbar:before,
+.navbar:after {
+    content: " ";
+    display: table;
+}
+.navbar:after {
+    clear: both;
+}
+.navbar {
+    *zoom: 1;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+nav {
+    height: 40px;
+    width: 100%;
+    background: #455868;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    border-bottom: 2px solid #283744;
+
+}
+nav ul {
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+}
+nav li {
+    display: inline;
+    float: left;
+}
+nav a {
+    color: #fff;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    text-shadow: 1px 1px 0px #283744;
+}
+nav li a {
+    border-right: 1px solid #576979;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+nav li:last-child a {
+    border-right: 0;
+}
+nav a:hover, nav a:active {
+    background-color: #8c99a4;
+    cursor: pointer;
+}
+nav a.show {
+    display: none;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bgimg-1 {
+    background-image: url("../images/camera.jpg");
+    min-height: 100%;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.contentarea{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+}
+.container{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.h3text1{
+    text-align:center;
+}
+
+.divfooter{
+    position:relative;
+}
+.footer{
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding:50px 80px;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    border-radius: 5px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+
+*:focus {
+    outline: none;
+}
+
+.divForm{
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+input[type=text]:hover, input[type=text]:focus,input[type=text]:active{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#submitform{
+    width: 100%;
+    background-color: #455868;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+#submitform:hover, #submitform:focus, #submitform:active{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.MainDiv{
+    width: 100%;
+    margin: 0 auto;
+}
+#Form{
+    width: 50%;
+    margin: 0 auto;
+}
+#MovieDiv{
+    border: solid black;
+    border-radius: 4px;
+}
